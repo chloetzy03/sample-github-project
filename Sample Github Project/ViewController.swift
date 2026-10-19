@@ -11,14 +11,16 @@ class ViewController: UIViewController {
 
     var label = UILabel()
     var label2 = UILabel()
+    var anotherLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
         label.text = "help"
         label.font = .preferredFont(forTextStyle: .largeTitle)
-        
         label.translatesAutoresizingMaskIntoConstraints = false
+        anotherLabel.text = "U GOT THIS"
+        anotherLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
         
         label2.text = "help's here!!!"
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
         view.addSubview(label2)
         
         
+        view.addSubview(anotherLabel)
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 //            stack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
