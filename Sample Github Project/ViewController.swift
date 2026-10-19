@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var label = UILabel()
+    var anotherLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,10 @@ class ViewController: UIViewController {
         label.text = "help"
         label.font = .preferredFont(forTextStyle: .largeTitle)
         label.translatesAutoresizingMaskIntoConstraints = false
+        anotherLabel.text = "U GOT THIS"
+        anotherLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
+        view.addSubview(anotherLabel)
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 //            stack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
